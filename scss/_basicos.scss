@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	background: #000;
+}
+
+dl, ol, ul{
+	margin: 0;
+}
+
+input,
+textarea{
+	outline: none;
+}
+
+@mixin titulos($color, $margin) {
+	color: $color;
+	margin-bottom: $margin;
+}
+
+.info__texto,
+.contacto__datos{
+	@include titulos(#ffffff, 30px);
+}
+
+.discografia__titulo,
+.fotos__titulo,
+.video__titulo{
+	@include titulos(#ffffff, 30px);
+	text-align: center;
+	padding-top: 30px;
+	font-size: 30px;
+	font-weight: bold !important;
+}
+
+.enclace-redes{
+	-webkit-transition: .3s ease all;
+	-o-transition: .3s ease all;
+	transition: .3s ease all;
+	cursor: pointer;
+	i{
+		font-size: 30px;
+		-webkit-transition:all .3s ease-in-out;
+		-o-transition:all .3s ease-in-out;
+		transition:all .3s ease-in-out;
+	}
+}
+
+$colores: (
+	facebook: #3b5998,
+	instagram: #c13584,
+	twitter: #1da1f2,
+	youtube: #c4302b,
+	spotify: #81b71a
+);
+
+@each $red, $colorRed in $colores {
+    .enclace-redes.#{$red} {
+		color: $colorRed;
+		& :hover{
+			color: #000;
+		}
+    }
+}

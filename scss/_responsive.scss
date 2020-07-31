@@ -1,0 +1,92 @@
+@media only screen and (max-width: 1024px){
+
+	.contenedor-img{
+		display: none;
+	}
+
+	.contacto__formulario{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.header__logo{
+		justify-content: center;
+	}
+
+	.header__redes{
+		display: none;
+	}
+
+	.inicio{
+		background: url('../img/4.jpg') no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	nav ul li a{
+		font-size: 15px;
+	}	
+
+	.info__texto{
+		font-size: 18px;
+		line-height: 15px;
+	}
+
+	.fotos__img-contenedor{
+		grid-template-columns: 1fr;
+	}
+
+	.video-contenedor{
+		grid-template-columns: 1fr;
+	}
+
+	.contenedor-discos{
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.tapa-lista ol li{
+		font-size: 20px;
+	}
+
+	@media only screen and (max-width: 480px){
+
+		.display-4{
+			font-size: 35px;
+		}
+
+		.lead{
+			font-size: 20px;
+		}
+
+		.jumbotron iframe{
+			max-width: 250px;
+		}
+
+		nav ul li a{
+			font-size: 12px;
+			padding: 5px;
+		}
+
+		.footer p{
+			font-size: 14px;
+		}
+
+		.carousel.slide{
+			width: 250px;
+			height: 250px;
+		}
+		
+		fieldset{
+			max-width: 250px;
+		}
+
+		.boton{
+			font-size: 14px;
+		}
+	}
+}
